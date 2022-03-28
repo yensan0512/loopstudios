@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Examples from "./Examples";
 import Footer from "./Footer";
 
 const Wrapper = styled.div`
@@ -47,9 +48,44 @@ function Creation() {
         </Title>
         <Button>SEE ALL</Button>
       </Container>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "0px", alignItems: "center", margin: "0px" }}>
+        <Examples
+          photo="static/desktop/image-deep-earth.jpg"
+          subtitle="Earth"
+        />
+        <Examples
+          photo="static/desktop/image-night-arcade.jpg"
+          subtitle="Night Arcade"
+        />
+        <Examples
+          photo="static/desktop/image-soccer-team.jpg"
+          subtitle="Soccer"
+        />
+        <Examples
+          photo="static/desktop/image-grid.jpg"
+          subtitle="Grid"
+        />
+        <Examples
+          photo="static/desktop/image-from-above.jpg"
+          subtitle="From Above"
+        />
+        <Examples
+          photo="static/desktop/image-pocket-borealis.jpg"
+          subtitle="Borealis"
+        />
+        <Examples
+          photo="static/desktop/image-curiosity.jpg"
+          subtitle="Curiosity"
+        />
+        <Examples
+          photo="static/desktop/image-fisheye.jpg"
+          subtitle="Fish Eye"
+        />
+      </div>
+
       <Footer />
 
-    </Wrapper>
+    </Wrapper >
 
   );
 
