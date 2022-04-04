@@ -32,6 +32,7 @@ const FooterMenuList = styled.div`
 
 const Menu = styled.h3`
   cursor:pointer;
+  color:var(--white);
 `;
 
 function Footer() {

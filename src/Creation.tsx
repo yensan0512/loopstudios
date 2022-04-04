@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Examples from "./Examples";
 import Footer from "./Footer";
 
@@ -39,6 +39,10 @@ const Button = styled.div`
 
 
 function Creation() {
+  function Event() {
+    alert('Hello!');
+    console.log("Fuck you");
+  }
 
   return (
     <Wrapper>
@@ -46,9 +50,9 @@ function Creation() {
         <Title>
           OUR CREATIONS
         </Title>
-        <Button>SEE ALL</Button>
+        <Button onClick={Event}>SEE ALL</Button>
       </Container>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0px", alignItems: "center", margin: "0px" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly", margin: "0px", padding: "0 120px", alignItems: "flex-end", gap: "20px" }}>
         <Examples
           photo="static/desktop/image-deep-earth.jpg"
           subtitle="Earth"
